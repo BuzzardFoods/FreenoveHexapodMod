@@ -13,6 +13,6 @@ Below is the list of sketches and their respective Python counterparts, as well 
 
 # .Ino + .Py
 
-- **BasicSerialServoCtrl_BSSC.INO** - **ServoCam_AudioTracking_BSSC.py** Motion/audio/manual servo control - Inputs from a webcam and tracks the motion with servos, can assign axis(← ↑ → ↓) to any servo. Can adjust angle range and sensitivity. The camera input also has filters, purely aesthetic. Audio mode where each servo is assigned to a frequency band, basically a mechanical visualizer/eq output. Also contains the same function of the BasicSerialServoControl program, controlling each servo manually. (Using multiple servos at once causes latency problems, the movement will be jittery and it will miss some of the serial commands. I intend on fixing this when it's more entertaining I.E. I get a laser pointer and use it to track my cat and keep him from yelling at me all the time.) 
-
+- **BasicSerialServoCtrl_BSSC.INO** - (**ServoCam_AudioTracking_BSSC.py**) This sketch allows manual control of up to 18 servos on the Freenove Hexapod V2 via serial commands. Send `S:{index}:{angle}` to move individual servos, and use +V or -V to toggle verbose output. Useful for testing servo positions or integrating with external control programs like Python scripts. I rely on this sketch a ton.
+  
 - TBA (ran out of time for now, more to come.)
